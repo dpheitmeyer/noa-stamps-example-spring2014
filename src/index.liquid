@@ -1,0 +1,12 @@
+---
+title: "Nature of America Stamp Series"
+layout: base
+---
+<main>
+    <p>Nature of America stamp series was one of the most popular series from the US Postal Service</p>
+<ul>
+    {% for sp in collections.stamppanes %}
+        <li><a href="{{ sp.url }}">{{ sp.data.title }}</a></li>
+    {% endfor %}
+    </ul>
+</main>
